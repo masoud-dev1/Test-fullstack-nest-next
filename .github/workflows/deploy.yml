@@ -2,13 +2,13 @@ name: Deploy
 
 on:
   push:
-    branches: [master, stage]     # اگر شاخه اصلی main است، master را main کن
+    branches: [master, stage]
 
 permissions:
   contents: read
 
 concurrency:
-  group: server-deploy            # دیپلوی‌ها پشت‌سرهم اجرا شوند
+  group: server-deploy
   cancel-in-progress: false
 
 jobs:
